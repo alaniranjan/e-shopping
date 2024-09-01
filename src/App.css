@@ -1,0 +1,11 @@
+/* filter data  */
+select{
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+    
+    margin-top: 10px;
+}
+select:focus{
+    outline: none;
+}

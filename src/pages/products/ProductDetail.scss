@@ -1,0 +1,35 @@
+.productDetailsContainer{
+  display: flex;
+  margin-top: 60px;
+  gap: 100px;
+  padding: 10px 50px 10px;
+  .productDetailsRight{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    & >h1{
+      font-size: 20px;
+    }
+    & >p{
+      font-size: 16px;
+      // margin-top: 15px;
+    }
+    .buttoncontainer{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      & > button {
+        padding: 10px 20px;
+        background: none;
+        border: none;
+        outline: 1px solid gray;
+      }
+      
+    }
+     
+   
+  
+  }
+}

@@ -1,0 +1,182 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .cardImageWrapper {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .cardImage {
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .cardContent {
+    padding: 15px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+  }
+  
+  .cardPrice {
+    color: #e91e63;
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  .cardDescription {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0 0;
+  }
+  
+
+ 
+
+  /* Add this to your CSS file (e.g., App.css or a specific CSS file for the component) */
+.carousel {
+    background: #EEE;
+  }
+  
+  .carousel-cell {
+    width: 100%; /* full width for each slide */
+    height: 100vh; /* full height for each slide */
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+  
+  .carousel-cell.is-selected {
+    background: #ED2;
+  }
+  
+
+
+  
+  .productDetailsContaine {
+    display: flex;
+    padding: 20px;
+  
+    .productDetailsLeft {
+      flex: 1;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .productDetailsRight {
+      flex: 1;
+      margin-left: 40px;
+  
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .priceContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        .originalPrice {
+          text-decoration: line-through;
+          color: #888;
+          margin-right: 10px;
+        }
+  
+        .discountedPrice {
+          color: #e74c3c;
+          font-size: 24px;
+          font-weight: bold;
+        }
+  
+        .discountPercentage {
+          margin-left: 10px;
+          color: #27ae60;
+          font-weight: bold;
+        }
+      }
+  
+      .description {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #555;
+      }
+  
+      .sizeContainer {
+        margin-bottom: 20px;
+  
+        h3 {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+  
+        .sizes {
+          display: flex;
+  
+          .sizeOption {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+  
+            &.selected {
+              background-color: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+  
+      .buttoncontainer {
+        display: flex;
+  
+        button {
+          padding: 15px 30px;
+          margin-right: 20px;
+          border: none;
+          background-color: #000;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+  
